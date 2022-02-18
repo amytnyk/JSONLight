@@ -27,3 +27,7 @@ human['name']                 # Andrew
 human['age']                  # 28
 human['children'][1]['name']  # Clara
 ```
+
+## JSON Light json navigator
+#### Usage:
+Run main.py and enter json path
