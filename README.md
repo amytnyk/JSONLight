@@ -31,3 +31,28 @@ human['children'][1]['name']  # Clara
 ## JSON Light json navigator
 #### Usage:
 Run main.py and enter json path
+
+```bash
+Enter path to json file: example.json
+
+{
+	"name": 'Andrew',
+	"age": 28,
+	"children": [ ... ] # 2 items,
+}
+Enter non-empty key to view specific key: children
+
+[
+	{ ... } # 2 items,
+	{ ... } # 2 items,
+]
+Press enter to go to the parent
+Enter index of an element: 1
+
+{
+	"name": 'Clara',
+	"age": 2,
+}
+Press enter to go to the parent
+Enter non-empty key to view specific key: 
+```

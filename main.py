@@ -25,7 +25,7 @@ class JSONNavigator:
         while True:
             print(self)
             if self.can_go_to_parent():
-                print("Press enter to go to parent")
+                print("Press enter to go to the parent")
             if isinstance(self.current_entry(), dict):
                 key = input("Enter non-empty key to view specific key: ")
                 if not len(key) and self.can_go_to_parent():
@@ -64,6 +64,7 @@ class JSONNavigator:
             return repr(entry)
 
     def __str__(self) -> str:
+        print()
         if isinstance(self.current_entry(), dict):
             return '\n'.join(['{'] + list(
                 map(lambda item: f"\t\"{item[0]}\": {self.shorter(item[1])},",
